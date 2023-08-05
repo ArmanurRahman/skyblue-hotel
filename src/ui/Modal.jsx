@@ -89,7 +89,7 @@ function Window({ children, name }) {
     const ref = useRef();
     useEffect(() => {
         function handleClick(e) {
-            if (ref && !ref.current.contains(e.target)) {
+            if (ref && !ref.current?.contains(e.target)) {
                 close();
             }
         }
