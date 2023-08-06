@@ -78,7 +78,7 @@ const Pagination = ({ count }) => {
     };
     return (
         <StyledPagination>
-            <p>
+            <P>
                 Showing <span>{(currentPage - 1) * PAGE_SIZE + 1}</span> to{" "}
                 <span>
                     {currentPage === pageCount
@@ -86,7 +86,7 @@ const Pagination = ({ count }) => {
                         : currentPage * PAGE_SIZE}
                 </span>
                 <span> of </span> <span>{count}</span> results
-            </p>
+            </P>
             <Buttons>
                 <PaginationButton
                     onClick={prevPage}

@@ -1,5 +1,4 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { useState } from "react";
 import { deleteCabin as deleteCabinApi } from "../../services/apiCabins";
 import { toast } from "react-hot-toast";
 
