@@ -5,8 +5,8 @@ const DarkModeContext = createContext();
 
 export function DarkModeProvider({ children }) {
     const [isDarkMode, setIsDarkMode] = useLocalStorageState(
-        false,
-        "isBarkMode"
+        window.matchMedia("(prefers-color-scheme: dark)").matches,
+        "isDarkMode"
     );
 
     useEffect(() => {
